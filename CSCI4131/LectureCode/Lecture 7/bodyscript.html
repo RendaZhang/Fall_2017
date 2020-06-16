@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+		<meta charset = "utf-8">
+		<title>An Example of JavaScript in the Body of an HTML Page</title>
+		<script>
+			/* Get the user to specify the number of rows of multiples of 10 we will calculate and 
+			   include in the table we print out in the script included in the body below */
+			var maxnums_str = window.prompt("Please Enter The Number of Multiples of 10 you would like to Calculate");
+			var maxnums = parseInt(maxnums_str); 
+		</script>
+   </head>
+   <body>
+		<h1> Welcome to the multiplication table page </h1>
+		<script>
+			var n = 0; // counter control variable
+
+			document.writeln(
+				"<table border = '1' style = 'text-align: center'>" );
+			document.writeln( "<tr><th>N</th><th>10*N</th>" + 
+				"<th>100*N</th><th>1000*N</th></tr>" );
+
+			while ( n++ < maxnums )
+			{
+				document.writeln( "<tr><td>" + n + "</td><td>" + 
+				(n * 10) + "</td>" + "<td>" + (n * 100) + 
+                "</td><td>" + (n * 1000) + "</td></tr>" );
+			} // end while
+
+			document.writeln( "</table>" );
+		 </script>
+   </body>
+</html>
+

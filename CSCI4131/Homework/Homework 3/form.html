@@ -1,0 +1,64 @@
+<!-- Author: Renda Zhang
+	 Class: CSCI4131
+	 Assignment 3        -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calender Input</title>
+		<link rel="stylesheet" type = "text/css" href = "form.css" >
+		<script src="form.js"></script>
+	</head>
+
+	<body>
+		<nav class="nav_bar">
+		  <a href="calendar.html">My Calender</a>
+		  <a href="form.html">Form Input</a>
+		</nav>
+
+		<!-- This form has one new HTML5 input type "time",
+			 and it is not supported in all browsers.
+			 This form has one new drop-down list-->
+		<form name="form" method="get" action = 
+		"http://www-users.cselabs.umn.edu/~tulaj001/form_handler.php"
+		onsubmit="return validateForm()">
+			<p>
+				<label>Event Name</label>
+				<input id = "check1" name = "eventname" type = "text"
+				size = "20"	maxlength = "30" required="required">
+			</p>
+			<p>
+				<label>Start Time</label>
+				<input name="starttime" type="time" required="required">
+			</p>
+			<p>
+				<label>End Time</label>
+				<input name="endtime" type="time" required="required">
+			</p>
+			<p>
+				<label>Location</label>
+				<input id = "check2" name = "location" type = "text" 
+				size = "20"	maxlength = "30" required="required">
+			</p>
+			<p>
+				<label>Day of the week
+				<select name = "day">
+					<option value="Monday">Mon</option>
+					<option value="Tuesday">Tue</option>
+					<option value="Wednesday">Wed</option>
+					<option value="Thursday">Thu</option>
+					<option value="Friday">Fri</option>
+					<option value="Saturday">Sat</option>
+					<option value="Sunday">Sun</option>
+				</select>
+				</label>
+			</p>
+			<p>
+				<input type = "submit" value = "Submit">
+			</p>
+		</form>
+
+	</body>
+</html>
+

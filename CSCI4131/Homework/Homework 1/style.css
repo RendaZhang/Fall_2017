@@ -1,0 +1,18 @@
+/* Author: Renda Zhang
+	Class: CSCI4131
+	Assignment 1 */
+.type1 {background-color: lightblue;}
+
+.type2 {background-color: lavender;}
+
+.type3 {background-color: yellow;}
+
+table {border-collapse: collapse; margin:0px auto;}
+
+td,th {border: solid}
+
+body {text-align: center;}
+
+span {font-weight: bold;}
+
+div {font-style: italic;}

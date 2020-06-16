@@ -1,0 +1,59 @@
+p
+{
+	/* center all text  */
+	text-align:center;
+	/* make all text red */
+    color:red;
+}
+
+table, td 
+{
+	border-collapse:collapse;
+	color:white; text-align:center;
+	border: 1px solid white; 
+
+/* That can also be written as * border: 1px solid white; */
+}
+
+table, th
+{
+	font-size : 125%;
+}
+
+a
+{
+	text-align:center;
+}
+
+nav a
+{
+	width:40%;
+	text-align: center;
+	background-color: yellow;
+}
+
+nav
+{
+	width: 50%;
+}
+
+#special { text-align:center; color:blue; }
+
+.maroon_row { background-color: maroon; }
+
+.gold_row { background-color: gold; }
+
+
+div.nav_bar
+         { 		
+			width: 200px; 
+			background-color: yellow; 
+	}
+	
+.left { float: left; }
+.right { float: right; }
+
+	
+
+	
+	

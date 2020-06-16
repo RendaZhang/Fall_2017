@@ -1,0 +1,101 @@
+/* Author: Renda Zhang
+	Class: CSCI4131
+	Assignment 5       */
+html, body
+{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
+#map-canvas
+{
+  height: 55%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#loc_form
+{
+  margin: 0 auto;
+  width: 30%;
+	padding: 0.01%;
+}
+
+
+h1
+{
+  color: black;
+}
+
+#calendar
+{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table
+{
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+
+td
+{
+  background-color: #FFE4B5;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#navmenu
+{
+  background-color: #F0F8FF;
+}
+
+#navmenu li
+{
+  display: inline;
+  padding: 10px;
+}
+
+#reminder
+{
+  background-color: #F5FFFA;
+  padding: 5px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logout
+{
+  padding: 10px;
+  float: left;
+  color: #CD5C5C;
+}
+
+/* force form to line up nicely */
+button
+{
+  margin: auto;
+}
+form
+{
+  display: table;
+  margin: auto;
+}
+label
+{
+  display: table-cell;
+}
+form p
+{
+  display: table-row;
+}
+input
+{
+  display: table-cell;
+}

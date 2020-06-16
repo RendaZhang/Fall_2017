@@ -1,0 +1,155 @@
+<!-- Author: Renda Zhang
+	 Class: CSCI4131
+	 Assignment 3        -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Calendar</title> 
+		<meta charset="utf-8">
+		<link rel="stylesheet" type = "text/css" href = "calendar.css" >
+		<script src="calendar.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAySb0zZLtwQnzFhJwqtTwVDRoU-lJa1ok&libraries=places&callback=myMap" async defer></script>
+	</head>
+          
+	<body>
+		
+		<nav class="nav_bar">
+		  <a href="calendar.html">My Calender</a>
+		  <a href="form.html">Form Input</a>
+		</nav>
+		
+		<div class="scroll-left"><p id="event"></p></div>
+
+		<!--Embeded the twitter-->
+		<div id="Twitter">
+			<a class="twitter-timeline" 
+			href="https://twitter.com/hashtag/UMN" 
+			data-widget-id="918678630640836609">
+				#UMN Tweets
+			</a>
+		</div>
+
+		<table id="tableID">
+			<tr>
+				<th><span>Mon</span></th>
+				<td>
+						<div>10:00 - 10:45 AM</div>CSCI1111 - KH 11<br>
+				</td>
+				<td>
+						<div>1:00 - 2:00 PM</div>Meeting - Shepherd Labs 222<br>
+				</td>
+				<td>
+						<div>3:00 - 4:00 PM</div>Bowling : 
+						<a href="http://sua.umn.edu/locations/coffman/">
+							Coffman 333
+						</a><br>
+				</td>
+			</tr>
+			<tr>
+				<th><span>Tue</span></th>
+				<td>
+						<div>8:00 - 8:45 AM</div>CSCI1111 - KH 11<br>
+				</td>
+				<td>
+						<div>11:00 - 11:45 AM</div>CSCI1111 - KH 11<br>
+				</td>
+				<td>
+						-<br>
+				</td>
+			</tr>
+			<tr>
+				<th><span>Wed</span></th>
+				<td>
+						<div>10:00 - 10:45 AM</div>CSCI 1111 - KH 11<br>
+				</td>
+				<td>
+						<div>2:00 - 3:00 PM</div>Group Meeting - Walter<br>
+				</td>
+				<td>
+						<div>4:00 - 5:00 PM</div>Office hours - KH 11<br>
+				</td>
+			</tr>
+			<tr>
+				<th><span>Thu</span></th>
+				<td>
+						<div>8:00 - 8:45 AM</div>CSCI 1111 - KH 11<br>
+				</td>
+				<td>
+						<div>11:00 - 11:45 AM</div>CSCI 1111 - KH 11<br>
+				</td>
+				<td>
+						-<br>
+				</td>
+			</tr>
+			<tr>
+				<th><span>Fri</span></th>
+				<td>
+						<div>10:00 - 10:45 AM</div>CSCI 1111 - KH 11<br>
+				</td>
+				<td>
+						-<br>
+				</td>
+				<td>
+						<div>5:00 - 6:00 PM</div>Office hours - KH 11<br>
+				</td>
+			</tr>
+			<tr>
+				<th><span>Sat</span></th>
+				<td>
+						-<br>
+				</td>
+				<td>
+						-<br>
+				</td>
+				<td>
+						-<br>
+				</td>
+			</tr>
+			<tr>
+				<th><span>Sun</span></th>
+				<td>
+						-<br>
+				</td>
+				<td>
+						-<br>
+				</td>
+				<td>
+						-<br>
+				</td>
+			</tr>
+		</table>
+
+		<!--the form-->
+		<div id="form">
+		<form onsubmit="RformEvent(); return false;">
+		<p>
+			<label>Radius:</label>
+			<input id = "Radius" type="number" min="500" max="10000" 
+				required="required">
+			<input type = "submit" value = "Find Nearby Resturants">
+		</p>		
+		</form>
+		
+		<form onsubmit="DformEvent(); return false;">
+		<p>
+			<label>Destination:</label>
+			<input id="Destination" type="text" size="20" maxlength="40"
+				required="required">
+			<input type="submit" value="Get Directions">
+		</p>
+		<p>
+			Walking<input type="radio" name="modes" value="WALKING">
+			Driving<input type="radio" name="modes" value="DRIVING" checked>
+			Transit<input type="radio" name="modes" value="TRANSIT">
+			Bicycle<input type="radio" name="modes" value="BICYCLING">
+		</p>
+		</form>
+		</div>
+
+		<!--the map-->
+		<div id="right-panel"></div>
+		<div id="GoogleMap"></div>
+
+	</body>
+</html>

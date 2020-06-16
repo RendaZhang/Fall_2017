@@ -1,0 +1,104 @@
+/* Author: Renda Zhang
+	Class: CSCI4131
+	Assignment 3       */
+
+html, body {
+	text-align: center; 
+	background-color: #808080;
+	height: 100%;
+}
+
+nav.nav_bar {
+	background-color: #00BFFF;
+	margin:0px auto;
+	text-align: left;
+	width: 90%;
+	line-height: 2em;
+	border: 0.1px solid white;
+}
+
+nav a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 1em;
+}
+
+nav a:hover {text-decoration: underline;}
+
+#tableID {
+	background-color: #E6E6FA;
+	border-collapse: collapse;
+	width: 50%;
+	margin:0px auto;
+	table-layout: fixed;
+}
+
+#tableID th {border: 0.1px solid;}
+
+#tableID td {border: 0.1px solid; width: 30%;}
+
+#tableID span {font-weight: bold;}
+
+#tableID td div {font-style: italic;}
+
+img {width: 30%;}
+
+/*Scrolling Text*/
+.scroll-left {
+	 width: 50%;
+	 margin: 0px auto;
+	 overflow: hidden;
+	 position: relative;
+}
+.scroll-left p {
+	color: white;
+	width: 1000px;
+	text-align: left;
+	/* Starting position */
+	transform: translateX(100%);
+	/* Apply animation to this element */
+	animation: scroll-left 15s linear infinite;
+}
+@keyframes scroll-left {
+	0%
+	{
+		transform: translateX(50%);
+	}
+	100%
+	{
+		transform: translateX(-70%);
+	}
+}
+
+/* styling for Google Map API */
+#GoogleMap {
+	height: 50%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/* styling for twitter */
+#Twitter {
+	position: absolute;
+	right: 0px;
+	width: 20%;
+}
+
+/* styling for form in calendar.html*/
+#form {
+	background-color: white;
+	width: 50%;
+	margin: 0px auto;
+	padding: 0.01%;
+}
+
+/* styling for right panel */
+#right-panel {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  overflow: auto;
+  float: right;
+  display: none;
+}

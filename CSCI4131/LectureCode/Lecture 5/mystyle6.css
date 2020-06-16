@@ -1,0 +1,8 @@
+	/*  Pseudo Class Selector Examples */
+	
+	a:link {color: gold;}
+	a:hover,a:focus {color: red;}
+	section p:first-child {font-weight:bold;color:red;}
+	section p:first-child:first-letter{font-size: 150%; color:royalblue;}
+    
+	

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carlot>
+  <car>
+    <make>Chevrolet</make>
+    <model>Camaro</model>
+    <year>2014</year>
+    <price>29995.95</price>
+  </car>
+  <car>
+    <make>Ford</make>
+    <model>Mustang</model>
+    <year>2014</year>
+    <price>28500.99</price>
+  </car>
+</carlot>
+  

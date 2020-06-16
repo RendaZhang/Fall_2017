@@ -1,0 +1,8 @@
+*.o
+cat
+cp
+dump
+ls
+mkdir
+mkfs
+tee

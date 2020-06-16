@@ -1,0 +1,26 @@
+body {
+  padding:20px;
+  font-family: verdana, arial, helvetica;
+}
+
+div.main {
+  background: lightgrey;
+  padding: 20px;
+  border: 1px solid black;
+  width: 800px;
+}
+
+table.grid {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+table.grid td {
+  background-color: lightblue;
+  padding: 5px;
+  border-radius: 5px;
+}

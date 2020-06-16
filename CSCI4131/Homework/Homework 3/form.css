@@ -1,0 +1,48 @@
+/* Author: Renda Zhang
+	Class: CSCI4131
+	Assignment 3       */
+
+html, body {
+	text-align: center;
+	background-color: #808080;
+	height: 100%;
+}
+ 
+nav.nav_bar {
+	background-color: #00BFFF;
+	margin:0px auto;
+	text-align: left;
+	width: 90%;
+	line-height: 2em;
+	border: 0.1px solid white;
+}
+
+nav a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 1em;
+}
+
+nav a:hover {text-decoration: underline;}
+
+form {
+	background-color: #E6E6FA;
+	width: 60%;
+	margin: 0px auto;
+}
+
+form input[type=time],input[type=text], select {
+	width: 50%;
+	padding: 1em 1.7em;
+	margin: 0.5em 0;
+	border: 1px solid;
+}
+
+form input[type=submit] {
+	width: 50%;
+	padding: 1em 1.7em;
+	margin: 0.5em 0;
+	color:white;
+	background-color: green;
+}
